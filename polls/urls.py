@@ -2,6 +2,9 @@ from django.urls import path
 
 from . import views
 
+# 为 URL 名称添加命名空间，以分辨重名的 URL
+app_name = "polls"
+
 urlpatterns = [
     # ex: /polls/
     path("", views.index, name="index"),
